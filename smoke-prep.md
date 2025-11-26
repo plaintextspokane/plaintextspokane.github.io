@@ -2,7 +2,7 @@
 layout:default
 ---
 
-**Prepare Your Home for Smoke**
+**Prepare for Smoke**
 
 1. Check weather and [Air Quality Index (AQI)](/aqi.html) daily during wildfire season.
    - Recommended: [AirNow ↑](https://www.airnow.gov) or [Spokane Regional Clean Air ↑](https://www.spokanecleanair.org/)
