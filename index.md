@@ -11,22 +11,11 @@ layout: default
 - [Make a clean room](clean-room.md)
 - [Check today’s AQI](aqi.md)
 
-**Energy & Home Actions**
-- [Reduce energy use](energy-basics.md)
-- [Explore heat pumps](heat-pumps.md)
-- [Find rebates & incentives](rebates.md)
-
 **Community & Volunteering**
 - [Join a neighborhood conversation](neighborhood.md)
-- [Run a simple event](event-guide.md)
-- [Join or lead a project team](volunteer-teams.md)
 
 **Policy & Civic Action**
-- [Contact elected officials](contact-officials.md)
-- [Submit public comment](public-comment.md)
-- [Track local climate policy](policy-tracker.md)
+
 
 **About & Resources**
 - [About](about.md)
-- [Template](template.md)
-- [Quick reference links](links.md)
