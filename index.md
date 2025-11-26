@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 A quick, no-nonsense guide for the people of Spokane
 
 <mark>this page is still under development, many links are inactive.</mark>
