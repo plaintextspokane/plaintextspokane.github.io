@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
----
+
 **Getting Around**
 - [Spokane Transit Authority (STA) ↑](https://www.spokanetransit.com)
 
