@@ -1,7 +1,23 @@
 body {
   font-family: sans-serif;
-  max-width: 550px;
   margin: 2rem auto;
+  max-width: 550px;
   padding: 0 1rem;
-  line-height: 1.6;
+}
+
+.content table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.content th,
+.content td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.content th {
+  background-color: #eee;
 }
