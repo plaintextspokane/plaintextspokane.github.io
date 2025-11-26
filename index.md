@@ -31,5 +31,5 @@ The ↑ character in a hyperlink indicates an external site.
 
 **About & Resources**
 - [About](about.md)
-- [Volunteer sign-up](volunteer.md)
+- [Template](template.md)
 - [Quick reference links](links.md)
