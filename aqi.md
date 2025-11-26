@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+---
 **Check today's AQI**
 
 AQI stands for Air Quality Index.  
@@ -20,4 +23,5 @@ There are various ways to check the AQI in Spokane.
   <a href="https://www.spokanecleanair.org/" target="_blank">Spokane Regional Clean Air agency ↑</a>
 
 3. A national resource for more information is <a href="https://www.airnow.gov" target="_blank">Airnow.gov ↑</a>
+
 
