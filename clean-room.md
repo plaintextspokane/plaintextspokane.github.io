@@ -1,4 +1,8 @@
 ---
+layout: default
+---
+
+---
 **Make a Clean Room**
 
 1. A "clean room" is a room within your house or apartment where you minimize outside air exchanges. 
@@ -10,3 +14,4 @@
 4. Run a HEPA or [DIY filter](diy-filter) inside the room.
 
 Check the EPA website for more details or guidance <a href="https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire#how" target="_blank">EPA's Create a Clean Room ↑</a> site.  
+
