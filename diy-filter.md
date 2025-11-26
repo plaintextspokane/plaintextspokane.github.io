@@ -1,9 +1,5 @@
-A quick, no-nonsense guide for the people of Spokane
-
-<mark>this page is still under development, many links are inactive.</mark>
-
-The ↑ character in a hyperlink indicates an external site.
-
+---
+layout: default
 ---
 
 **Build a DIY air filter**
@@ -15,4 +11,5 @@ The ↑ character in a hyperlink indicates an external site.
 3. Seal edges with tape to reduce air leaks.
 
 4. Run the fan during smoke events; do not leave on unattended.
+
 
