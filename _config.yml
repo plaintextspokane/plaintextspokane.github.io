@@ -1,4 +1,3 @@
-theme: null
 markdown: kramdown
-sass:
-  style: compressed
+kramdown:
+  input: GFM
