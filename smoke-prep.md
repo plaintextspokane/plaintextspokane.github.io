@@ -1,4 +1,7 @@
 ---
+layout:default
+---
+
 **Prepare Your Home for Smoke**
 
 1. Check weather and [Air Quality Index (AQI)](/aqi.html) daily during wildfire season.
