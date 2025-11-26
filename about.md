@@ -10,4 +10,4 @@ The ↑ character in a hyperlink indicates an external site.
 
 This is a one-man, volunteer operation.
 
-[Spokane](https://en.wikipedia.org/wiki/Spokane,_Washington) is a city in the state of Washington. 
+<a href="https://en.wikipedia.org/wiki/Spokane,_Washington" target="_blank">Spokane ↑</a> is a city in the state of Washington.
