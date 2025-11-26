@@ -2,7 +2,11 @@ A quick, no-nonsense guide for the people of Spokane
 
 <mark>this page is still under development, many links are inactive.</mark>
 
+The ↑ character in a hyperlink indicates an external site.
+
 ---
+**Getting Around**
+- [Spokane Transit Authority (STA) ↑](https://www.spokanetransit.com)
 
 **Wildfire & Smoke**
 - [Prepare your home for smoke](smoke-prep.md)
