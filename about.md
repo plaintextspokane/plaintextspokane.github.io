@@ -4,7 +4,9 @@ A quick, no-nonsense guide for the people of Spokane
 
 The ↑ character in a hyperlink indicates an external site.
 
-## About
+---
+
+**About**
 
 This is a one-man, volunteer operation.
 
