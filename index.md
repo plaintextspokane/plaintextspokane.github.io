@@ -20,7 +20,7 @@ The ↑ character in a hyperlink indicates an external site.
 - [Find rebates & incentives](rebates.md)
 
 **Community & Volunteering**
-- [Host a neighborhood conversation](conversation.md)
+- [Join a neighborhood conversation](neighborhood.md)
 - [Run a simple event](event-guide.md)
 - [Join or lead a project team](volunteer-teams.md)
 
