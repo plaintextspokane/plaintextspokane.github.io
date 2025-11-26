@@ -1,11 +1,4 @@
-A quick, no-nonsense guide for the people of Spokane
-
-<mark>this page is still under development, many links are inactive.</mark>
-
-The ↑ character in a hyperlink indicates an external site.
-
 ---
-
 **Make a Clean Room**
 
 1. A "clean room" is a room within your house or apartment where you minimize outside air exchanges. 
