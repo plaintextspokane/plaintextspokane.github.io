@@ -1,6 +1,6 @@
-A quick, no-nonsense guide for Spokane
+A quick, no-nonsense guide for the people of Spokane
 
-<mark>*this page is still under development, many links are inactive.*</mark>
+<mark>this page is still under development, many links are inactive.</mark>
 
 ---
 
@@ -26,6 +26,6 @@ A quick, no-nonsense guide for Spokane
 - [Track local climate policy](policy-tracker.md)
 
 **About & Resources**
-- [About our organization](about.md)
+- [About](about.md)
 - [Volunteer sign-up](volunteer.md)
 - [Quick reference links](links.md)
