@@ -1,8 +1,9 @@
 body {
-  font-family: monospace;
+  font-family: arial, sans-serif;
   margin: 2rem auto;
   max-width: 550px;
   padding: 0 1rem;
+  background-color: #f9fafc;
 }
 
 .content table {
@@ -19,5 +20,5 @@ body {
 }
 
 .content th {
-  background-color: #eee;
+  background-color: #f9fafc;
 }
