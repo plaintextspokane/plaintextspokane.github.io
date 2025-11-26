@@ -1,9 +1,8 @@
-# CLIMATE ACTION HOW-TO LIBRARY
 A quick, no-nonsense guide for Spokane residents & volunteers.
 
 ---
 
-## WILDFIRE & SMOKE
+## Wildfire & Smoke
 - [Prepare your home](smoke-prep.md)
 - [Build a DIY air filter](diy-filter.md)
 - [Make a clean room](clean-room.md)
