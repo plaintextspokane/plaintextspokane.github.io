@@ -3,7 +3,7 @@ layout: default
 ---
 
 **Getting Around**
-- [Spokane Transit Authority (STA) ↑](https://www.spokanetransit.com)
+- [Transit](transit.md)
 
 **Wildfire & Smoke**
 - [Prepare your home for smoke](smoke-prep.md)
