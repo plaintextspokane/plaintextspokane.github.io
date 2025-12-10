@@ -19,11 +19,11 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      # Use npm install instead of npm ci
+      - run: npm install
 
       - run: npm run build
 
-      # Upload the built site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
