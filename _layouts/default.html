@@ -8,18 +8,18 @@
 <body>
 
 <nav>
-  <a href="/">plaintextspokane</a>
+  <a href="/">Home</a>
 </nav>
 
 <main>
   {{ content }}
 
   {% comment %}
-  If this is a folder index page, list all other pages in the same folder
+  Folder page: list all other pages in the same folder
   {% endcomment %}
-  {% assign current_dir = page.path | split: '/' | slice: 0, page.path | split: '/' | size | minus: 1 | join: '/' %}
-  {% assign pages_in_folder = site.pages | where_exp: "p", "p.path contains current_dir" | where_exp: "p", "p.url != page.url" %}
-  
+  {% assign folder_path = page.url | split: '/' | slice: 0, -2 | join: '/' %}
+  {% assign pages_in_folder = site.pages | where_exp: "p", "p.url != page.url and p.url contains folder_path" %}
+
   {% if pages_in_folder.size > 0 %}
     <h2>Pages in this folder</h2>
     <ul>
@@ -30,5 +30,6 @@
   {% endif %}
 
 </main>
+
 </body>
 </html>
