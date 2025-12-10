@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: DIY filter
 ---
 
@@ -12,4 +12,5 @@ title: DIY filter
 3. Seal edges with tape to reduce air leaks.
 
 4. Run the fan during smoke events; do not leave on unattended.
+
 
