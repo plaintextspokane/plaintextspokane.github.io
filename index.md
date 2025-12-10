@@ -2,11 +2,6 @@
 layout: default
 title: plaintextspokane
 ---
-
-# Welcome
-
-## Folders
-
 <ul>
 {% for p in site.pages %}
   {% if p.name == "index.md" and p.dir != "/" %}
@@ -14,9 +9,6 @@ title: plaintextspokane
   {% endif %}
 {% endfor %}
 </ul>
-
-## Pages (at the site root)
-
 <ul>
 {% for p in site.pages %}
   {% if p.dir == "/" and p.name != "index.md" %}
