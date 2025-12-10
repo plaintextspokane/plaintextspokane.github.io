@@ -9,31 +9,11 @@
 
 <nav>
   <a href="/">plaintextspokane</a>
+  <br><p>A quick, no-nonsense web guide for Spokane residents. </p>
 </nav>
 
 <main>
   {{ content }}
-
-  {% comment %}
-  List sibling pages in the same folder
-  (super simple, uses p.dir instead of URL slicing)
-  {% endcomment %}
-
-  {% assign pages_in_folder = site.pages | where: "dir", page.dir | sort: "url" %}
-  {% assign pages_in_folder = pages_in_folder | reject: "url", page.url %}
-
-  {% if pages_in_folder.size > 0 %}
-    <h2>Pages in this folder</h2>
-    <ul>
-      {% for p in pages_in_folder %}
-        <li>
-          <a href="{{ p.url }}">
-            {{ p.title | default: p.name | replace: ".md", "" }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
 </main>
 
 </body>
