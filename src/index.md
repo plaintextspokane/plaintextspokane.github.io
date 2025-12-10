@@ -1,22 +1,16 @@
 ---
-layout: base
-title: Plaintext Spokane
+layout: default
+title: plaintextspokane
 ---
 
-# Plaintext Spokane
+# Welcome to Plaintext Spokane
 
-## Sections / Folders
+## Pages
 
-{% for p in collections.allpages %}
-  {% if p.fileSlug == "index" and p.inputPath != "src/index.md" %}
-  - [{{ p.data.title or p.fileSlug }}]({{ p.url }})
+<ul>
+{% for p in site.pages %}
+  {% if p.title and p.url != "/" %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
   {% endif %}
 {% endfor %}
-
-## Pages at root
-
-{% for p in collections.allpages %}
-  {% if p.inputPath contains "/src/" and p.inputPath != "src/index.md" and p.fileSlug != "index" %}
-  - [{{ p.data.title or p.fileSlug }}]({{ p.url }})
-  {% endif %}
-{% endfor %}
+</ul>
