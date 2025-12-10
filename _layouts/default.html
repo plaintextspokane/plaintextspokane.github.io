@@ -16,9 +16,22 @@
 
   {% comment %}
   Folder page: list all other pages in the same folder
+  GitHub Pages-compatible
   {% endcomment %}
-  {% assign folder_path = page.url | split: '/' | slice: 0, -2 | join: '/' %}
-  {% assign pages_in_folder = site.pages | where_exp: "p", "p.url != page.url and p.url contains folder_path" %}
+
+  {% assign pages_in_folder = "" | split: "" %}
+
+  {% for p in site.pages %}
+    {% if p.url != page.url %}
+      {% assign segments = p.url | split: '/' %}
+      {% assign page_segments = page.url | split: '/' %}
+      {% assign folder_of_p = segments | slice: 0, segments.size | minus: 2 %}
+      {% assign folder_of_page = page_segments | slice: 0, page_segments.size | minus: 2 %}
+      {% if folder_of_p == folder_of_page %}
+        {% assign pages_in_folder = pages_in_folder | push: p %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
   {% if pages_in_folder.size > 0 %}
     <h2>Pages in this folder</h2>
