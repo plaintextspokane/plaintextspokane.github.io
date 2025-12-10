@@ -1,8 +1,8 @@
 ---
 layout: default
-Title: Spokane Assistance
+Title: spokane assistance
 ---
-**Spokane Assistance Info**
+**Spokane Assistance**
 
 There are ways to contact the Spokane police for non-emergency situations.
 
