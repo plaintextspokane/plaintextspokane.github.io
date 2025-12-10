@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: base
+Title: Spokane Assistance Info
 ---
 
 ### Spokane Assistance Info
