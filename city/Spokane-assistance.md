@@ -1,6 +1,6 @@
 ---
 layout: default
-Title: Spokane Assistance Info
+Title: Spokane Assistance
 ---
 **Spokane Assistance Info**
 
