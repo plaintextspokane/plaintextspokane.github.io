@@ -2,18 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{{ title }}</title>
+  <title>{{ title or "Plaintext Spokane" }}</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
 <nav>
   <a href="/">Home</a>
-  {% if page.url != "/" %}
+  {% if page.url is defined and page.url != "/" %}
     {% set crumbs = page | breadcrumbs %}
-    {% for c in crumbs %}
-      &raquo; <a href="{{ c.url }}">{{ c.name }}</a>
-    {% endfor %}
+    {% if crumbs %}
+      {% for c in crumbs %}
+        &raquo; <a href="{{ c.url }}">{{ c.name }}</a>
+      {% endfor %}
+    {% endif %}
   {% endif %}
 </nav>
 
