@@ -3,6 +3,8 @@ layout: default
 Title: Spokane Assistance Info
 ---
 
+## {{ page.dir | split: '/' | last | capitalize }}
+
 ### Spokane Assistance Info
 
 There are ways to contact the Spokane police for non-emergency situations.
