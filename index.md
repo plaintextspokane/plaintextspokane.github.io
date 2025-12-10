@@ -2,6 +2,7 @@
 layout: default
 title: plaintextspokane
 ---
+**Something missing? Let <a href="https://komments.cloud/dc9bb8e114433037405a64" target="_blank">me know ↑</a>**
 <ul>
 {% for p in site.pages %}
   {% if p.name == "index.md" and p.dir != "/" %}
