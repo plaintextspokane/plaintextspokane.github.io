@@ -2,7 +2,7 @@
 layout: default
 title: Enviro
 ---
-## Pages in this folder
+**{{ page.title }}**
 
 <ul>
 {% for p in site.pages %}
