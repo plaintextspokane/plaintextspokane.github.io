@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<main>
 
-<p class="breadcrumbs">
-  <a href="/">Home</a>
-  {% assign parts = page.dir | split:'/' | reject:'' %}
-  {% for part in parts %}
-    / <a href="/{{ part }}/">{{ part | capitalize }}</a>
-  {% endfor %}
-</p>
+  <!-- Breadcrumbs: paste here -->
+  <p class="breadcrumbs">
+    <a href="/">Home</a>
 
-**{{ page.title }}**
+    {% assign raw = page.dir | replace: '//', '/' | split:'/' %}
+    {% assign parts = "" | split: "" %}
 
-{{ content }}
+    {% for p in raw %}
+      {% unless p == "" %}
+        {% assign parts = parts | push: p %}
+      {% endunless %}
+    {% endfor %}
 
-</main>
+    {% for part in parts %}
+      / <a href="/{{ part }}/">{{ part | capitalize }}</a>
+    {% endfor %}
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+
 </body>
 </html>
