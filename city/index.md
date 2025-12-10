@@ -2,7 +2,7 @@
 layout: default
 title: City
 ---
-## Pages in this folder
+## {{ p.title }}
 
 <ul>
 {% for p in site.pages %}
