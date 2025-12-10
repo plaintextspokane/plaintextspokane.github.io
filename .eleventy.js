@@ -5,31 +5,29 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getAll();
   });
 
-  // Breadcrumb filter
+  // Safe breadcrumbs filter
   eleventyConfig.addNunjucksFilter("breadcrumbs", function(page) {
-    // page.url might be undefined, so check
-    let url = page?.url || "/";
-    if (typeof url !== "string") url = "/";
+    // Ensure page and page.url exist
+    let url = page?.url;
+    if (typeof url !== "string") return [];
 
-    // Remove trailing slash
+    // Remove trailing slash for processing
     if (url.endsWith("/") && url !== "/") url = url.slice(0, -1);
 
     const parts = url.split("/").filter(Boolean);
     let path = "";
-    let breadcrumb = '<a href="/">Home</a>';
-
+    const breadcrumb = [];
     for (const part of parts) {
       path += `/${part}`;
-      breadcrumb += ` &raquo; <a href="${path}/">${part}</a>`;
+      breadcrumb.push({ name: part, url: path + "/" });
     }
-
     return breadcrumb;
   });
 
   return {
     dir: {
-      input: "src",
-      includes: "_includes",
+      input: "src",       // your Markdown pages
+      includes: "_includes", // layouts
       data: "_data",
       output: "_site"
     }
