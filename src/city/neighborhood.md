@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: base
+Title: Neighborhoods
 ---
 
 **Join the Conversation in your Neighborhood**
