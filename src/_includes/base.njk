@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="/">Home</a>
+  {% if page.url != "/" %}
+    {% set crumbs = page | breadcrumbs %}
+    {% for c in crumbs %}
+      &raquo; <a href="{{ c.url }}">{{ c.name }}</a>
+    {% endfor %}
+  {% endif %}
+</nav>
+
+<main>
+  {{ content | safe }}
+</main>
+
+</body>
+</html>
