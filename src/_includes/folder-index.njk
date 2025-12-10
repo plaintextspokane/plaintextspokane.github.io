@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<h1>{{ title }}</h1>
+
+<h2>Pages in this section:</h2>
+<ul>
+  {% for p in collections.allpages %}
+    {% if p.inputPath contains page.inputPath | replace('/index.md','') and p.fileSlug != 'index' %}
+      <li><a href="{{ p.url }}">{{ p.data.title or p.fileSlug }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
