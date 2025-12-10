@@ -6,17 +6,29 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a>
-    {% for p in site.pages %}
-      {% if p.title and p.url != "/" %}
-        | <a href="{{ p.url }}">{{ p.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
 
-  <main>
-    {{ content }}
-  </main>
+<nav>
+  <a href="/">plaintextspokane</a>
+</nav>
+
+<main>
+  {{ content }}
+
+  {% comment %}
+  If this is a folder index page, list all other pages in the same folder
+  {% endcomment %}
+  {% assign current_dir = page.path | split: '/' | slice: 0, page.path | split: '/' | size | minus: 1 | join: '/' %}
+  {% assign pages_in_folder = site.pages | where_exp: "p", "p.path contains current_dir" | where_exp: "p", "p.url != page.url" %}
+  
+  {% if pages_in_folder.size > 0 %}
+    <h2>Pages in this folder</h2>
+    <ul>
+      {% for p in pages_in_folder %}
+        <li><a href="{{ p.url }}">{{ p.title | default: p.basename }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+</main>
 </body>
 </html>
