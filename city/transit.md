@@ -2,7 +2,6 @@
 layout: default
 title: Transit
 ---
-
 **Spokane Transit Authority (STA)**
 
 <a href="https://www.spokanetransit.com/" target="_blank">Spokane Transit Authority (STA) ↑ </a> is the Spokane region's main transportation service.  
