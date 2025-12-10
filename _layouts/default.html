@@ -13,6 +13,24 @@
 </nav>
 
 <main>
+  {% assign segments = page.url | split:"/" %}
+{% assign path = "" %}
+
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+
+  {% for s in segments %}
+    {% unless s == "" or s == "index.html" %}
+      {% assign path = path | append: "/" | append: s %}
+
+      <span>›</span>
+
+      <a href="{{ path | replace: '.html','' }}">
+        {{ s | replace: '.html','' | replace: '.md','' | capitalize }}
+      </a>
+    {% endunless %}
+  {% endfor %}
+</nav>
   {{ content }}
 </main>
 
