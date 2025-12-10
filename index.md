@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: plaintextspokane
 ---
 
 # Welcome
@@ -8,49 +8,19 @@ title: Home
 ## Folders
 
 <ul>
-{% assign folders = "" | split: "" %}
-
 {% for p in site.pages %}
-  {% assign s = p.url | split: "/" %}
-
-  {% comment %}
-    Folder index pages look like:
-    /folder/ → ["", "folder", ""]
-    So segments.size == 3 AND last segment == ""
-  {% endcomment %}
-  {% if s.size == 3 and s.last == "" and p.url != "/" %}
-    {% assign folders = folders | push: p %}
+  {% if p.name == "index.md" and p.dir != "/" %}
+    <li><a href="{{ p.url }}">{{ p.title | default: p.dir | remove: '/' }}</a></li>
   {% endif %}
-{% endfor %}
-
-{% for f in folders %}
-  <li>
-    <a href="{{ f.url }}">{{ f.title | default: f.basename }}</a>
-  </li>
 {% endfor %}
 </ul>
 
----
-
-## Pages in this folder
+## Pages (at the site root)
 
 <ul>
-{% assign root_pages = "" | split: "" %}
-
 {% for p in site.pages %}
-  {% assign s = p.url | split: "/" %}
-
-  {% comment %}
-    Root-level pages:
-    /page/ → ["", "page", ""]
-    AND the file is physically at root (path contains no folder)
-  {% endcomment %}
-  {% if s.size == 3 and p.path contains "/" == false %}
-    {% assign root_pages = root_pages | push: p %}
+  {% if p.dir == "/" and p.name != "index.md" %}
+    <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: '.md','' }}</a></li>
   {% endif %}
-{% endfor %}
-
-{% for p in root_pages %}
-  <li><a href="{{ p.url }}">{{ p.title | default: p.basename }}</a></li>
 {% endfor %}
 </ul>
