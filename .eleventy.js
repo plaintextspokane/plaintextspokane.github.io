@@ -1,21 +1,24 @@
 module.exports = function(eleventyConfig) {
+
   // Collection of all pages
   eleventyConfig.addCollection("allpages", function(collectionApi) {
     return collectionApi.getAll();
   });
 
   // Breadcrumb filter
-  eleventyConfig.addNunjucksFilter("breadcrumbs", function(url) {
+  eleventyConfig.addNunjucksFilter("breadcrumbs", function(page) {
+    // page.url might be undefined, so check
+    let url = page?.url || "/";
+    if (typeof url !== "string") url = "/";
+
     // Remove trailing slash
-    if(url.endsWith("/")) url = url.slice(0, -1);
+    if (url.endsWith("/") && url !== "/") url = url.slice(0, -1);
 
-    // Split path into parts
     const parts = url.split("/").filter(Boolean);
-
-    // Build breadcrumb HTML
-    let breadcrumb = '<a href="/">Home</a>';
     let path = "";
-    for(const part of parts) {
+    let breadcrumb = '<a href="/">Home</a>';
+
+    for (const part of parts) {
       path += `/${part}`;
       breadcrumb += ` &raquo; <a href="${path}/">${part}</a>`;
     }
