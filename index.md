@@ -15,7 +15,7 @@ layout: default
 - [Join a neighborhood conversation](neighborhood.md)
 
 **Policy & Civic Action**
-
+- [Spokane assistance info](Spokane-assistance.md)
 
 **About & Resources**
 - [About](about.md)
