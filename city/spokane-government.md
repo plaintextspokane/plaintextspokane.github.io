@@ -2,7 +2,6 @@
 layout: default
 title: Spokane government
 ---
-
 **Spokane's Governments**
 
 Spokane may refer to the city or the county of the same name - both have their own goverenance. 
