@@ -5,6 +5,9 @@ body {
   padding: 0 1rem;
   line-height: 1.6;
 }
+main {
+   line-height: 1.6;
+}
 
 nav a {
   margin-right: 1rem;
