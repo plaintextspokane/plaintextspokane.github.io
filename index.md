@@ -1,6 +1,6 @@
 ---
 layout: default
-title: plaintextspokane
+title: Home
 ---
 
 # Welcome
@@ -13,12 +13,11 @@ title: plaintextspokane
 {% for p in site.pages %}
   {% assign s = p.url | split: "/" %}
 
-  {%
-    comment
+  {% comment %}
     Folder index pages look like:
     /folder/ → ["", "folder", ""]
     So segments.size == 3 AND last segment == ""
-  %}
+  {% endcomment %}
   {% if s.size == 3 and s.last == "" and p.url != "/" %}
     {% assign folders = folders | push: p %}
   {% endif %}
@@ -41,12 +40,11 @@ title: plaintextspokane
 {% for p in site.pages %}
   {% assign s = p.url | split: "/" %}
 
-  {%
-    comment
+  {% comment %}
     Root-level pages:
-    /something/ → ["", "something", ""]
-    AND p.path has no folder (p.path does not contain "/")
-  %}
+    /page/ → ["", "page", ""]
+    AND the file is physically at root (path contains no folder)
+  {% endcomment %}
   {% if s.size == 3 and p.path contains "/" == false %}
     {% assign root_pages = root_pages | push: p %}
   {% endif %}
