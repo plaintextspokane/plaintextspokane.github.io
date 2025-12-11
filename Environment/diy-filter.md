@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: DIY filter
 ---
 **Build a DIY air filter**
