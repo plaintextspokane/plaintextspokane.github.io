@@ -2,7 +2,6 @@
 layout: default
 Title: About
 ---
-
 **About**
 
 This is a one-man, volunteer operation.
