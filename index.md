@@ -6,7 +6,7 @@ title: plaintextspokane
 <ul>
 {% assign root_pages = site.pages | where:"dir","/" | where_exp:"p","p.name != 'index.md'" %}
 {% for p in root_pages %}
-  <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: ".md","" }}</a></li>
+  <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: ".md","" | capitalize }}</a></li>
 {% endfor %}
 {% assign folder_indexes = site.pages | where:"name","index.md" | where_exp:"p","p.dir != '/'" %}
 {% for p in folder_indexes %}
