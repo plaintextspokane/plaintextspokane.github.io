@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Spokane government
 ---
 **Spokane's Governments**

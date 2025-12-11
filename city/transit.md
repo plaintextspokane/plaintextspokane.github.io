@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Transit
 ---
 **Spokane Transit Authority (STA)**

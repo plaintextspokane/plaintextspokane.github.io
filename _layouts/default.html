@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<main>
+
+<!-- Breadcrumbs -->
+<p class="breadcrumbs">
+  <a href="/">Home</a>
+  {% assign parts = page.dir | split:'/' | reject:'' %}
+  {% assign path = "" %}
+  {% for part in parts %}
+    {% assign path = path | append:'/' | append:part %}
+    / <a href="{{ path }}/">{{ part | capitalize }}</a>
+  {% endfor %}
+</p>
+{{ content }}
+
+</main>
+</body>
+</html>
