@@ -1,5 +1,5 @@
 ---
-layout: page
+
 title: Smoke prep
 ---
 **Prepare your Home for Smoke**

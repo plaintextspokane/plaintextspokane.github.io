@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Spokane government
 ---
 **Spokane's Governments**
