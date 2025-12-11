@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: folder
 title: Best of
 ---
 **{{ page.title }}**
