@@ -4,6 +4,7 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
   background-color: #ffffff;
+  color: #212121;
 
 }
 
@@ -14,16 +15,16 @@ main {
 nav a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #a9a0ae;
+  color: #755985;
 }
 /* unvisited link */
 a:link {
-  color: #a9a0ae;
+  color: #755985;
 }
 
 /* visited link */
 a:visited {
-  color: #a9a0ae;
+  color: #755985;
 }
 
 nav {
@@ -40,7 +41,7 @@ ul {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #a9a0ae;
+  color: #755985;
 }
 
 .breadcrumbs span {
