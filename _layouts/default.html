@@ -10,7 +10,7 @@
 
 <!-- Breadcrumbs -->
 <p class="breadcrumbs">
-  <a href="/">Home</a>
+  <a href="/">plaintextspokane</a>
   {% assign parts = page.dir | split:'/' | reject:'' %}
   {% assign path = "" %}
   {% for part in parts %}
@@ -18,6 +18,8 @@
     / <a href="{{ path }}/">{{ part | capitalize }}</a>
   {% endfor %}
 </p>
+<p>A simple, no-nonsense guide for Spokane.</p>
+<p>Links with ↑ symbol are external.</p>
 {{ content }}
 
 </main>
