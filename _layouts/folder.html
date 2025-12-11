@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: page.dir | split: '/' | last | capitalize }}</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 <main>
 
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title | default: page.dir | split: '/' | last | capitalize }}</h1>
 
-<ul>
-{% assign temp = site.pages | where_exp:"p","p.dir == page.dir and p.name != 'index.md'" %}
-{% assign children = temp | sort:"title" %}
-{% for p in children %}
-  <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: ".md","" }}</a></li>
+{% comment %}
+  Collect all pages in this folder (excluding index.md)
+{% endcomment %}
+{% assign pages_in_folder = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.dir == page.dir and p.name != "index.md" %}
+    {% assign pages_in_folder = pages_in_folder | push: p %}
+  {% endif %}
 {% endfor %}
-</ul>
+
+{% comment %}
+  Sort alphabetically by title (or fallback to filename)
+{% endcomment %}
+{% assign pages_in_folder = pages_in_folder | sort: "title" %}
+
+{% if pages_in_folder.size > 0 %}
+  <ul>
+  {% for p in pages_in_folder %}
+    <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: ".md","" }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No pages in this folder yet.</p>
+{% endif %}
 
 {{ content }}
 
