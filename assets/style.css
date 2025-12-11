@@ -7,7 +7,7 @@ body {
 }
 
 main {
-   line-height: 1.9;
+   line-height: 1.8;
 }
 
 nav a {
@@ -33,7 +33,7 @@ ul {
   padding-left: 1.5rem;
 }
 .breadcrumbs {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 1em;
 }
 
