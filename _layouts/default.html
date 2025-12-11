@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>{{ page.title | default: site.title }}</h1>
+
+    {{ content }}
+
+    {% comment %}
+      If this is a folder index page, list all pages in this folder
+    {% endcomment %}
+    {% assign pages_in_folder = site.pages | where_exp: "p", "p.dir == page.dir and p.name != 'index.md'" %}
+    {% if pages_in_folder.size > 0 %}
+      <ul>
+        {% for p in pages_in_folder %}
+          <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: ".md","" }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </main>
+</body>
+</html>

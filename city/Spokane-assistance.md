@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 Title: Spokane assistance
 ---
 **Spokane Assistance**

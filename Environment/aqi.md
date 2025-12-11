@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: AQI
 ---
 **Checking AQI**

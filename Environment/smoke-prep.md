@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Smoke prep
 ---
 **Prepare your Home for Smoke**

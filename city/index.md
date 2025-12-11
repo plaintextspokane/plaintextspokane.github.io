@@ -1,4 +1,4 @@
 ---
-layout: folder
+layout: default
 title: City
 ---
