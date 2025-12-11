@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Transit
 ---
 **Spokane Transit Authority (STA)**

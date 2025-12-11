@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 Title: Spokane assistance
 ---
 **Spokane Assistance**
