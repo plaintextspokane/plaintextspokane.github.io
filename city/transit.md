@@ -1,5 +1,4 @@
 ---
-
 title: Transit
 ---
 **Spokane Transit Authority (STA)**

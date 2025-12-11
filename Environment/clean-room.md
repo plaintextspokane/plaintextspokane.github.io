@@ -1,5 +1,4 @@
 ---
-
 title: Clean Room
 ---
 **Make a Clean Room**

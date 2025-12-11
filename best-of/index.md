@@ -1,5 +1,4 @@
 ---
-
 title: Best of
 ---
 **{{ page.title }}**
