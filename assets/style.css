@@ -15,16 +15,16 @@ main {
 nav a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #755985;
+  color: #1D6BE0;
 }
 /* unvisited link */
 a:link {
-  color: #755985;
+  color: #1D6BE0;
 }
 
 /* visited link */
 a:visited {
-  color: #755985;
+  color: #1D6BE0;
 }
 
 nav {
@@ -41,7 +41,7 @@ ul {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #755985;
+  color: #1D6BE0;
 }
 
 .breadcrumbs span {
