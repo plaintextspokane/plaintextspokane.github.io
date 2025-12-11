@@ -10,4 +10,5 @@ title: Environment
     <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: '.md',''| replace: '-',' ' }}</a></li>
   {% endif %}
 {% endfor %}
+<li><a href="https://plaintextspokane.com/Environment-Groups" target="_blank">Groups/Advocacy</a></li>
 </ul>
