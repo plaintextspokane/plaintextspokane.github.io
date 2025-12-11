@@ -3,6 +3,7 @@ body {
   max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
+  background-color: #cccccc;
 
 }
 
@@ -13,16 +14,16 @@ main {
 nav a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #377ea3;
+  color: ##81627c;
 }
 /* unvisited link */
 a:link {
-  color: #377ea3;
+  color: ##81627c;
 }
 
 /* visited link */
 a:visited {
-  color: #377ea3;
+  color: ##81627c;
 }
 
 nav {
@@ -39,7 +40,7 @@ ul {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #377ea3;
+  color: #81627c;
 }
 
 .breadcrumbs span {
