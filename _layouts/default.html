@@ -11,12 +11,9 @@
 <!-- Breadcrumbs -->
 <p class="breadcrumbs">
   <a href="/">plaintextspokane</a>
-  {% assign parts = page.dir | split:'/' | reject:'' %}
-  {% assign path = "" %}
-  {% for part in parts %}
-    {% assign path = path | append:'/' | append:part %}
-    / <a href="{{ path }}/">{{ part | capitalize }}</a>
-  {% endfor %}
+  {% if page.dir != "/" %}
+    / <a href="{{ page.dir }}">{{ page.dir | split:'/' | last | capitalize }}</a>
+  {% endif %}
 </p>
 <p>A simple, no-nonsense guide for Spokane.</p>
 <p>Links with ↑ symbol are external.</p>
