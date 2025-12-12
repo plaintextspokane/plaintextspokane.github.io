@@ -1,6 +1,6 @@
 ---
 layout: default
-Title: Spokane Services
+Title: Services
 ---
 **Spokane Services**
 
