@@ -1,8 +1,8 @@
 ---
 layout: default
-Title: Spokane Services & Data
+Title: Spokane Services
 ---
-**Spokane Services & Data**
+**Spokane Services**
 
 There are a few ways to contact the city services for emergency and non-emergency situations.
 
