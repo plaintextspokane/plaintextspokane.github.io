@@ -10,8 +10,10 @@ title: Environment
     <li><a href="{{ p.url }}">{{ p.title | default: p.name | replace: '.md',''| replace: '-',' ' }}</a></li>
   {% endif %}
 {% endfor %}
+</ul>
 <br>
 <br>
+<ul>
 Some Local Advocacy Groups
 <br>
 <li><a href="https://www.350spokane.org/" target="_blank">350 Spokane ↑</a> is the local chapter of the 350 organization which is a volunteer-lead non-profit doing climate change work in the region.</li> 
