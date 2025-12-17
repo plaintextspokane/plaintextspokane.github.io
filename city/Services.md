@@ -8,7 +8,7 @@ There are a few ways to contact the city services for emergency and non-emergenc
 
 <a href="https://my.spokanecity.org/police/contact/" target="_blank">Spokane Police Contact Information ↑</a>
 
-The Spokane City Police have a tool that displays data on Calls for Service, Traffic and Collisions, and Reported Offenses. See that <a. href="~/Documents/GitHub/plaintextspokane.github.io/assets/style.css" target="_blank">online PowerBI Tool here. ↑</a>
+The Spokane City Police have a tool that displays data on Calls for Service, Traffic and Collisions, and Reported Offenses. See that <a href="~/Documents/GitHub/plaintextspokane.github.io/assets/style.css" target="_blank">online PowerBI Tool here. ↑</a>
 
 **Some key numbers to know:** 
 * Emergency Services: 911
